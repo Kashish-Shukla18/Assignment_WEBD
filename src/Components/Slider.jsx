@@ -3,16 +3,22 @@ import {
   BsFillArrowRightCircleFill,
   BsFillArrowLeftCircleFill,
 } from "react-icons/bs";
+import img1 from './img/1.jpg'
+import img2 from './img/2.jpg'
+import img3 from './img/3.jpg'
+import img4 from './img/4.jpg'
 
-export default function Slider({ slides }) {
-  let [current, setCurrent] = useState(0);
+export default function Slider() {
+  const [current, setCurrent] = useState(0);
+  
+  const slides = [img1, img2, img3, img4];
 
-  let previousSlide = () => {
+  const previousSlide = () => {
     if (current === 0) setCurrent(slides.length - 1);
     else setCurrent(current - 1);
   };
 
-  let nextSlide = () => {
+  const nextSlide = () => {
     if (current === slides.length - 1) setCurrent(0);
     else setCurrent(current + 1);
   };
@@ -25,9 +31,9 @@ export default function Slider({ slides }) {
           transform: `translateX(-${current * 100}%)`,
         }}
       >
-        {slides.map((s, index) => {
-          return <img className="object-contain h-full" key={index} src={s} alt={`slide ${index}`} />;
-        })}
+        {slides.map((s, index) => (
+          <img className="object-contain h-full" key={index} src={s} alt={`slide ${index}`} />
+        ))}
       </div>
 
       <div className="absolute top-0 h-full w-full justify-between items-center flex text-white px-10 text-3xl">
@@ -40,19 +46,13 @@ export default function Slider({ slides }) {
       </div>
 
       <div className="absolute bottom-0 py-4 flex justify-center gap-3 w-full">
-        {slides.map((s, i) => {
-          return (
-            <div
-              onClick={() => {
-                setCurrent(i);
-              }}
-              key={"circle" + i}
-              className={`rounded-full w-5 h-5 cursor-pointer  ${
-                i === current ? "bg-white" : "bg-gray-500"
-              }`}
-            ></div>
-          );
-        })}
+        {slides.map((_, i) => (
+          <div
+            onClick={() => setCurrent(i)}
+            key={"circle" + i}
+            className={`rounded-full w-5 h-5 cursor-pointer ${i === current ? "bg-white" : "bg-gray-500"}`}
+          ></div>
+        ))}
       </div>
     </div>
   );
