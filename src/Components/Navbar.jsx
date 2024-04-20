@@ -36,7 +36,7 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-black-800">
           <div className="px-2 py-3 space-y-1 sm:px-3">
-          <Link to="/about" className="text-black-300 block">Join us</Link>
+          <Link to="/login" className="text-black-300 block">Join us</Link>
           <Link to="/classes" className="text-black-300 block">Classes</Link>
           <Link to="/products" className="text-black-300 block">Products</Link>
           <Link to="/about" className="text-black-300 block">About Us</Link>
