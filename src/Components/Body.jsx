@@ -1,23 +1,18 @@
 import React from 'react';
 import Slider from './Slider';
+import Img5 from './img/5.jpg'
 
 const Body = () => {
-    const slides = [
-        "src/Components/img/1.jpg",
-        "src/Components/img/2.jpg",
-        "src/Components/img/3.jpg",
-        "src/Components/img/4.jpg",
-    ];
     return (
         <>
-        <Slider slides={slides} />
+        <Slider/>
             <div className="container mx-auto mt-12 w-[95vw">
                 <h1 className='text-lg text-center'>Top Students</h1>
                 <div className='pt-4 p-4' >
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
                         <div className="bg-gray-100  flex items-center justify-center">
                             <div className='flex flex-col'>
-                                <img src='src/Components/img/5.jpg' alt='Student' className='h-9/10 w-full object-cover' />
+                                <img src={Img5} alt='Student' className='h-9/10 w-full object-cover' />
                                 <div className='flex flex-col p-2 bg-gray-200 '>
                                     <p className='font-bold'>Amit Jha</p>
                                     <p>Some Review Submitted by the user to the company</p>
@@ -26,7 +21,7 @@ const Body = () => {
                         </div>
                         <div className="bg-gray-100  flex items-center justify-center">
                             <div className='flex flex-col'>
-                                <img src='src/Components/img/5.jpg' alt='Student' className='h-9/10 w-full object-cover' />
+                                <img src={Img5} alt='Student' className='h-9/10 w-full object-cover' />
                                 <div className='flex flex-col p-2 bg-gray-200 '>
                                     <p className='font-bold'>Amit Jha</p>
                                     <p>Some Review Submitted by the user to the company</p>
@@ -35,7 +30,7 @@ const Body = () => {
                         </div>
                         <div className="bg-gray-100  flex items-center justify-center">
                             <div className='flex flex-col'>
-                                <img src='src/Components/img/5.jpg' alt='Student' className='h-9/10 w-full object-cover' />
+                                <img src={Img5} alt='Student' className='h-9/10 w-full object-cover' />
                                 <div className='flex flex-col p-2 bg-gray-200 '>
                                     <p className='font-bold'>Amit Jha</p>
                                     <p>Some Review Submitted by the user to the company</p>
@@ -44,7 +39,7 @@ const Body = () => {
                         </div>
                         <div className="bg-gray-100  flex items-center justify-center">
                             <div className='flex flex-col'>
-                                <img src='src/Components/img/5.jpg' alt='Student' className='h-9/10 w-full object-cover' />
+                                <img src={Img5} alt='Student' className='h-9/10 w-full object-cover' />
                                 <div className='flex flex-col p-2 bg-gray-200 '>
                                     <p className='font-bold'>Amit Jha</p>
                                     <p>Some Review Submitted by the user to the company</p>
