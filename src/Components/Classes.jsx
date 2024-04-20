@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Img1 from './img/1.jpg'
 
 const Classes = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -25,10 +26,10 @@ const Classes = () => {
             {currentClasses.map((classItem) => (
                 <div key={classItem.id} className="flex flex-col sm:flex-row mt-10">
                     <div className="max-w-md flex w-full h-fit  sm:w-1/3 sm:h-fit">
-                        <img src="image-url" alt="Class" className="w-full h-full bg-slate-500" />
+                        <img src={Img1} alt="Class" className="w-full h-full bg-slate-500" />
                     </div>
                     <div className="flex flex-col w-full sm:w-4/5">
-                        <div className="mt-8 text-left pl-4">
+                        <div className=" text-left pl-4">
                             <h2 className="text-2xl font-bold">{classItem.name}</h2>
                             <p className="text-lg mt-4">{classItem.description}</p>
                         </div>
