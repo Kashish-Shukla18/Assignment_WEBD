@@ -1,11 +1,11 @@
 import React from "react";
-
+import Img3 from './img/3.jpg';
 const Products = () => {
     return (
     <div>
         <div className="container mx-auto px-4 py-8 h-1/3 flex flex-col sm:flex-row items-center">
             <div className="max-w-md mx-auto sm:mr-8">
-                <img src="product-image-url" alt="Product" className="w-full" />
+                <img src={Img3} alt="Product" className="w-full" />
             </div>
 
             <div className="mt-8">
@@ -17,7 +17,7 @@ const Products = () => {
         </div>
         <div className="container mx-auto px-4 py-8 h-1/3 flex flex-col sm:flex-row items-center">
             <div className="max-w-md mx-auto sm:mr-8">
-                <img src="product-image-url" alt="Product" className="w-full" />
+                <img src={Img3} alt="Product" className="w-full" />
             </div>
 
             <div className="mt-8">
@@ -29,7 +29,7 @@ const Products = () => {
         </div>
         <div className="container mx-auto px-4 py-8 h-1/3 flex flex-col sm:flex-row items-center">
             <div className="max-w-md mx-auto sm:mr-8">
-                <img src="product-image-url" alt="Product" className="w-full" />
+                <img src={Img3} alt="Product" className="w-full" />
             </div>
 
             <div className="mt-8">
